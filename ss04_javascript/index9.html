@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--Vd lấy giá trị từ input và the p-->
+    <input type="text" id="txtInput" value="HCM">
+    <p id="txtMyText">Ha Noi</p>
+    <button onclick="getValue()">OK</button>
+
+    <script>
+        function getValue() {
+            let a = document.getElementById("txtInput").value;
+            let b = document.getElementById("txtMyText").innerText;
+            // alert(a +"  & " + b);
+            console.log(a +"  & " + b)
+        }
+    </script>
+</body>
+</html>
