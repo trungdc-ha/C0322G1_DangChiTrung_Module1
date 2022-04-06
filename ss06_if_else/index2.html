@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*Nhập điểm số từ bàn phím
+        * Nếu điểm >= 75 & tỉ lệ vắng nghỉ > 20% thì nói chuyện
+        * Nếu điểm <75 thì fail
+        * */
+
+        let point = parseInt(prompt("Input point:"));
+        let absent = parseInt(prompt("Input absent: "))
+        if(point >= 75){
+            if(absent > 20){
+                alert("đi nói chuyện....");
+            } else {
+                alert("Pass");
+            }
+        } else {
+            alert("Fail");
+        }
+    </script>
+</body>
+</html>

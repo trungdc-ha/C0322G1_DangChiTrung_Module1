@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*
+        * Cho người dùng nhập điểm trung bình
+        * nếu dtb >= 9 thông báo xuất sắc.
+        * 7 <= dtb < 9 thông báo tốt.
+        * 6 <= dtb < 7 thông báo trung bình
+        * <6 yếu.
+        * */
+        let average = parseInt(prompt("Input average: "));
+        // if(average > 9){
+        //     document.write("Excellent");
+        // }
+        // if(7 <= average && average < 9){
+        //     document.write("Good");
+        // }
+        // if(6 <= average && average < 7){
+        //     document.write("Average");
+        // }
+        // if(6 > average){
+        //     document.write("Blow");
+        // }
+        if(average >= 9){
+            document.write("Excellent");
+        }else if(average >= 7){
+            document.write("Good");
+        }else if(average >= 6){
+            document.write("Average");
+        } else {
+            document.write("Blow");
+        }
+    </script>
+</body>
+</html>
