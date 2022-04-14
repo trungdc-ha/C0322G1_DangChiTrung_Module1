@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [4, 9, 9, 7]; //11 ==> index = -1
+    // let arr1 = ["c1", "a", "d", "b"];
+
+    /*Chèn phần tử vào cuối mảng*/
+    // arr[4] = 10;
+    // arr[arr.length] = 10;
+    // arr.push(11);
+
+    /*Xóa phần tử ở cuối mảng */
+    // arr.pop();
+
+    /*Thêm phần tử ở đầu mảng */
+    // arr.unshift(11);
+
+    /*Xóa phần tử đầu mảng*/
+    // arr.shift();
+
+    /*Thêm ở vị trí bất ki: 4, 9, 6, 7*/
+    // arr.splice(2,0,11); //thêm 11 tại index 2
+    // arr.splice(2,0,11,12); //thêm 11,12 tại index 2
+    //7,8, 4, 9, 6, 7
+    // arr.splice(0,0,7,8);
+
+    /*Xóa tại vị trí bất kì*/
+    // arr.splice(1,1); //4, 6, 7
+    // arr.splice(2,2); //4, 9
+
+    /*Hàm chuyển mảng thành chuỗi*/
+    // let str = arr.toString();
+    // let str = arr.join("-");
+    // document.write(str);
+
+    /*Hàm đảo mảng*/
+    // arr.reverse();
+
+    /*Hàm sắp xếp*/
+    // arr1.sort(function (a, b) {
+    //     return a - b ; //sắp xếp tăng
+    //     // return b - a; //sắp xếp giảm
+    // })
+
+    /*Hàm tìm kiếm*/
+    // let index = arr.indexOf(11); //-1
+    // let index = arr.indexOf(9); //1
+    let index = arr.lastIndexOf(9); //2
+    document.write(index)
+    /*
+    * Nếu x tồn tại trong mảng thì
+    * trả về index đầu tiên của x
+    * Nếu x không tồn tại thì trả về -1
+    * */
+
+    // for (let i = 0; i < arr1.length; i++) {
+    //     document.write(arr1[i] + " ");
+    // }
+</script>
+</body>
+</html>

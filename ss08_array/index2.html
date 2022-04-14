@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let arr = ["a","b","c","d"];
+        // for(let i = 0; i < arr.length; i++){
+        //     document.write(arr[i]);
+        // }
+        // document.write(arr[-1]) //undefined
+        // document.write(arr[4]) //undefined
+
+        /*for-in dùng để duyệt index*/
+       // for (let index in arr){
+       //     document.write(index + "<br>");
+       //     // document.write(arr[index] + "<br>")
+       // }
+
+        /*for-of dùng để duyệt giá trị*/
+       for(let element of arr){
+           document.write(element + "<br>");
+       }
+
+    </script>
+</body>
+</html>
