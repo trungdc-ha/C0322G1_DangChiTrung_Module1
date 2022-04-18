@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*Biến toàn cục*/
+    let x = 10;
+    let u = 10;
+    function increase(u) { /*Tham số là biến cục bộ*/
+        let x = 5; /*Biến cục bộ*/
+        let y = 99; /*Biến cục bộ*/
+        u = 100;
+        x = x + 1;
+        document.write(x); //6
+    }
+
+    // increase(u) //copy gia tri 10
+    increase() //
+    alert(x); //10
+    // console.log(y); //Err
+    console.log(u); //10
+
+</script>
+</body>
+</html>
