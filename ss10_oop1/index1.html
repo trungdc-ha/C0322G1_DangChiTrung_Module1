@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        /*B1 tạo class bằng từ khóa class*/
+        class DienThoai {
+            constructor(ten, hangSX) {
+                this.ten = ten;
+                this.hangSX = hangSX;
+            }
+
+            // constructor() {
+            // }
+
+            goiDien(){
+                document.write(this.ten + " dang goi dien cho ai do. <br/>")
+
+            }
+
+            /*Setter - cập nhật thuộc tính của Object*/
+            setTen(tenMoi){
+                this.ten = tenMoi;
+            }
+
+            /*Getter - lấy thông tin thuộc tính*/
+            getTen(){
+                return this.ten;
+            }
+        }
+
+        /*B2 tạo đối tượng*/
+        let iphone12 = new DienThoai("Iphone 12", "Apple");
+        // iphone12.setTen("Iphone 13"); //Cach 1 - cập nhật tên
+        // iphone12.ten = "Iphone 13"  //Cach 2 - cập nhật tên
+        iphone12.goiDien();
+        // document.write("Ten cua Object Iphone12 là: " + iphone12.getTen())
+        // document.write("Ten cua Object Iphone12 là: " + iphone12.ten)
+
+        // let samsungs10 = new DienThoai("Samsung s10", "SamSung");
+        // samsungs10.goiDien();
+    </script>
+</body>
+</html>
